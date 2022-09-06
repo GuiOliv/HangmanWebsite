@@ -6,7 +6,7 @@
     <ProjectGuid>38134ccd-075a-4279-95a7-3f49a1553f07</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>Main.py</StartupFile>
+    <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,9 +26,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Main.py">
+    <Compile Include="app.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="templates\game.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
