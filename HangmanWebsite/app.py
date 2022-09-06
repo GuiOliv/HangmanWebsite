@@ -1,4 +1,4 @@
-from flask import Flask, render_template, 
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -8,6 +8,8 @@ def home():
 
 def hey():
     return 'bruh'
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
